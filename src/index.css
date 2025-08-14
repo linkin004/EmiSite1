@@ -1,0 +1,43 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%; /* Dark background */
+    --foreground: 210 40% 98%; /* Light text */
+    --card: 222.2 84% 4.9%; /* Dark card background */
+    --card-foreground: 210 40% 98%; /* Light text on cards */
+    --popover: 222.2 84% 4.9%; /* Dark popover background */
+    --popover-foreground: 210 40% 98%; /* Light text on popovers */
+    --primary: 142.1 76.2% 36.3%; /* Green primary */
+    --primary-foreground: 210 40% 98%; /* Light text on primary */
+    --secondary: 217.2 32.6% 17.5%; /* Darker secondary */
+    --secondary-foreground: 210 40% 98%; /* Light text on secondary */
+    --muted: 217.2 32.6% 17.5%; /* Muted background */
+    --muted-foreground: 215 20.2% 65.1%; /* Muted text */
+    --accent: 271.8 76.2% 36.3%; /* Purple accent */
+    --accent-foreground: 210 40% 98%; /* Light text on accent */
+    --destructive: 0 62.8% 30.6%; /* Red for destructive actions */
+    --destructive-foreground: 210 40% 98%; /* Light text on destructive */
+    --border: 217.2 32.6% 17.5%; /* Dark border */
+    --input: 217.2 32.6% 17.5%; /* Dark input background */
+    --ring: 142.1 76.2% 36.3%; /* Green ring */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Already dark theme, so no changes needed for .dark class */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
